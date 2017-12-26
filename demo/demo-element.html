@@ -1,0 +1,21 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../t-notify.html">
+<link rel="import" href="../../t-shared-components/theme.html">
+
+<dom-module id="demo-element">
+  <template>
+   <style></style>
+
+      <t-notify active type="success" message="A sample long message to understand the design"></t-notify>
+      <t-notify active type="error" message="A sample long message to understand the design"></t-notify>
+      <t-notify active type="warn" message="A sample long message to understand the design"></t-notify>
+
+  </template>
+
+  <script>
+    class DemoElement extends Polymer.Element {
+      static get is() { return 'demo-element' }
+    }
+    customElements.define(DemoElement.is, DemoElement);
+  </script>
+</dom-module>
